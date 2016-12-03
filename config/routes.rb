@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'static_pages/kingsong1' , to: 'static_pages#kingsong1', as: 'kingsong1'  
-  get 'static_pages/kingsong2'
+  match '/kingsong1' , to: 'static_pages#kingsong1'
+  match '/kingsong2' , to: 'static_pages#kingsong2'
 
 root 'application#hello'
   # The priority is based upon order of creation: first created -> highest priority.
