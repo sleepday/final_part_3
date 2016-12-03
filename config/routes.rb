@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'static_pages/kingsong1' , to: 'static_pages#kingsong1' as: 'kingsong1'  
+  get 'static_pages/kingsong1' , to: 'static_pages#kingsong1', as: 'kingsong1'  
   get 'static_pages/kingsong2'
 
 root 'application#hello'
